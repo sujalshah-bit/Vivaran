@@ -6,3 +6,8 @@ func If[T any](condition bool, trueVal, falseVal T) T {
 	}
 	return falseVal
 }
+func Check(e error) {
+	if e != nil {
+		panic(e)
+	}
+}

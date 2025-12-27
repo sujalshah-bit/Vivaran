@@ -4,12 +4,19 @@ Vivaran is a `wc`-like command-line utility written in Go that reads either **a 
 
 ## **Supported Flags**
 
-| Flag | Name       | Description                                                                                  | Example               |
-| ---- | ---------- | -------------------------------------------------------------------------------------------- | --------------------- |
-| `-c` | Size       | Outputs the file size in bytes                                                               | `go run ./cmd/main.go -c test.txt` |
-| `-l` | Lines      | Counts the number of lines                                                                   | `go run ./cmd/main.go -l test.txt` |
-| `-w` | Words      | Counts words separated by any whitespace                                                     | `go run ./cmd/main.go -w test.txt` |
-| `-m` | Characters | Counts Unicode characters (multibyte-safe). Same as `-c` when input has no multibyte support | `go run ./cmd/main.go -m test.txt` |
+<!-- BEGIN:SUPPORTED_FLAGS -->
+
+## **Supported Flags**
+
+| Flag | Name | Description | Example |
+| ---- | ---- | ----------- | ------- |
+| `-c` | Size | Outputs the file size in bytes | `go run ./cmd/main.go -c test.txt` |
+| `-l` | Lines | Counts the number of lines | `go run ./cmd/main.go -l test.txt` |
+| `-w` | Words | Counts words separated by whitespace | `go run ./cmd/main.go -w test.txt` |
+| `-m` | Characters | Counts Unicode characters (multibyte-safe) | `go run ./cmd/main.go -m test.txt` |
+| `-bs` | Buffer size | Set buffer size | `go run ./cmd/main.go -bs test.txt` |
+
+<!-- END:SUPPORTED_FLAGS -->
 
 You can combine multiple flags.
 
